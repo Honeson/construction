@@ -16,7 +16,7 @@
         <!-- Bootsnav -->
         <link rel="stylesheet" href="{% static 'css/bootsnav.css' %}">
         <!-- Fancybox -->
-        <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.fancybox.css?v=2.1.5' %}" media="screen" />	
+        <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.fancybox.css' %}" media="screen" />	
         <!-- Custom stylesheet -->
         <link rel="stylesheet" href="{% static 'css/custom.css' %}" />
         <!--[if lt IE 9]>
@@ -52,17 +52,12 @@
             <div class="top_nav">
                 <div class="container">
                     <ul class="list-inline info">
-                        <li><a href="#"><span class="fa fa-phone"></span> 1234 - 5678 - 9012</a></li>
-                        <li><a href="#"><span class="fa fa-envelope"></span> support@Construct.com</a></li>
-                        <li><a href="#"><span class="fa fa-clock-o"></span> Mon - Sat 9:00 - 19:00</a></li>
+                        <li><a href="#"><span class="fa fa-phone"></span> +234 8033 398 726</a></li>
+                        <li><a href="#"><span class="fa fa-envelope"></span> nnannabg@yahoo.com</a></li>
+                        <li><a href="#"><span class="fa fa-clock-o"></span> Mon - Sat 8:00 am- 5:00 pm</a></li>
                     </ul>
                     <ul class="list-inline social_icon">
                         <li><a href=""><span class="fa fa-facebook"></span></a></li>
-                        <li><a href=""><span class="fa fa-twitter"></span></a></li>
-                        <li><a href=""><span class="fa fa-behance"></span></a></li>
-                        <li><a href=""><span class="fa fa-dribbble"></span></a></li>
-                        <li><a href=""><span class="fa fa-linkedin"></span></a></li>
-                        <li><a href=""><span class="fa fa-youtube"></span></a></li>
                     </ul>			
                 </div>
             </div><!-- Top Navbar end -->
@@ -92,7 +87,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand" href=""><img class="logo" src="images/logo.png" alt=""></a>
+                        <a class="navbar-brand" href=""><img class="logo" src="{% static 'images/logocon.jpg' %}" alt=""></a>
                     </div>
                     <!-- Navigation -->
                     <div class="collapse navbar-collapse" id="navbar-menu">
@@ -107,7 +102,9 @@
                 </div>   
             </nav><!-- Navbar end -->
         </header><!-- Header end -->
-
+        <div class="container">
+            {% include 'messages.html' %}
+        </div>
 
         <section id="home" class="home">
             <!-- Carousel -->
@@ -115,13 +112,26 @@
                 <!-- Carousel-inner -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
+                        <img src="{% static 'images/slider_img2.jpg' %}" alt="Construction">
+                        <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>Big General Global Resources</h3>
+                                <h1>Construction Services</h1>
+                                <h1 class="second_heading">Experience & Expertise</h1>
+                                <p>Big General Global Resources as it has been operating legally since 2003, are made up of experts who very knowledge of the services the company renders. We provide the best services to our customers in a way that speaks quality and expertise.</p>
+                                <a  class="btn know_btn">know more</a>
+                                <a  class="btn know_btn">view project</a>
+                            </div>					
+                        </div>
+                    </div>
+                    <div class="item">
                         <img src="{% static 'images/slider_img.jpg' %}" alt="Construction">
                         <div class="overlay">
                             <div class="carousel-caption">
-                                <h3>We are Certified Engineers</h3>
+                                <h3>Big General Global Resources</h3>
                                 <h1>Construction Services</h1>
-                                <h1 class="second_heading">Creative & Professional</h1>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                                <h1 class="second_heading">Modern Equipment & Technology</h1>
+                                <p>At Big Energy Global Resources, we utilize new cutting edge equipments and instrument to provide our clients the best services that suits their exact needs.</p>
                                 <a  class="btn know_btn">know more</a>
                                 <a  class="btn know_btn">view project</a>
                             </div>					
@@ -131,10 +141,10 @@
                         <img src="{% static 'images/slider_img2.jpg' %}" alt="Construction">
                         <div class="overlay">
                             <div class="carousel-caption">
-                                <h3>We are Certified Engineers</h3>
+                                <h3>Big General Global Resources</h3>
                                 <h1>Construction Services</h1>
-                                <h1 class="second_heading">Creative & Professional</h1>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                                <h1 class="second_heading">Sound Management Team</h1>
+                                <p>Decisions in Big Energy Global Resources are not made by one person. We consists builders, architects, civil engineers, e.t.c, making up a team of experts who are so engaging when it comes to the rendering of services to our esteemed customers.</p>
                                 <a  class="btn know_btn">know more</a>
                                 <a  class="btn know_btn">view project</a>
                             </div>					
@@ -144,10 +154,10 @@
                         <img src="{% static 'images/slider_img3.jpg' %}" alt="Construction">
                         <div class="overlay">
                             <div class="carousel-caption">
-                                <h3>We are Certified Engineers</h3>
+                                <h3>Big General Global Resources</h3>
                                 <h1>Construction Services</h1>
-                                <h1 class="second_heading">Creative & Professional</h1>
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                                <h1 class="second_heading">Timely Project Delivery</h1>
+                                <p>Our customers satisfaction is our watch-word. We deliver all our projects at when due. We make sure our clients get the best by delivering projects on time while maintaining all the standards. </p>
                                 <a  class="btn know_btn">know more</a>
                                 <a  class="btn know_btn">view project</a>
                             </div>					
@@ -178,9 +188,12 @@
                     <div class="col-lg-7 col-md-6">
                         <div class="about_content">
                             <h2>Welcome to Our Company</h2>
-                            <h3>Aliquam lacus purus, auctor malesuada</h3>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
-                            <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                            <h3>Big General Global Resources</h3>
+                            <p>BIG GENERAL GLOBAL RESOURCES is an indegenous contracting company that was incorporated and registered 
+                                on the 7<sup>th</sup> of Novemebers, 2003 with option to general contracts, supplies, imports and exports
+                                , manufacturers representative, buiding construction and civil works and transportation.
+                                </p>
+                            <p>The company is also into oil and gas services with the oil service companies within the Nigerian context. Since its inception, the company has been involved in the development and enhancement of national economy</p>
                             <a  class="btn know_btn">know more</a>
                         </div>
                     </div>
@@ -200,7 +213,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div class="head_title">
                             <h2>WHY CHOOSE US?</h2>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                            <p>We combibe many elements to offer our customers the best services and experience. Our works are guaranted of quality, we deliver on time, we're passionate and deliver quality work and services.</p>
 
                         </div>
                     </div>
@@ -210,28 +223,28 @@
                         <div class="why_us_item">
                             <span class="fa fa-leaf"></span>
                             <h4>We deliver quality</h4>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni </p>
+                            <p>Big General Global Resources deliver quality services to our esteemed customers since it's made up of trusted team of experts.</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="why_us_item">
                             <span class="fa fa-futbol-o"></span>
                             <h4>Always on time</h4>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
+                            <p>Because we are Professionals whose watch watch-word is timely delivery, we are always early enough to start each of our projects.</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="why_us_item">
                             <span class="fa fa-group"></span>
                             <h4>We are pasionate</h4>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
+                            <p>We are not just made up of professionals and experts who deliver quality services to our customers, we're also passionate about our work.</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="why_us_item">
                             <span class="fa fa-line-chart"></span>
                             <h4>Professional Services</h4>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
+                            <p>Our focus is for our my customers to get the best services in terms of all the aspects of services we offer, by delivering professional services. </p>
                         </div>
                     </div>
                 </div>
@@ -245,123 +258,124 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="service_item">
-                            <img src="{%static 'images/service_img1.jpg' %}" alt="Our Services" />
-                            <h3>CONSTRUCTION MANAGEMENT</h3>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                            <img src="{%static 'images/import.jpg' %}" alt="Our Services" />
+                            <h3>IMPORT</h3>
+                            <p>Please write all that you import so i can upload them here. i can't think of what you import now. That's why you see me asking for this now to help me complete what am doing without any issue please without any issue in this place that we are talking.</p>
+                            <a href="#services" class="btn know_btn">know more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service_item">
+                            <img src="{% static 'images/export.jpg' %}" alt="Our Services" />
+                            <h3>EXPORT</h3>
+                            <p>Please write all that you import so i can upload them here. i can't think of what you export now. That's why you see me asking for this now to help me complete what am doing without any issue please without any issue in this place that we are talking</p>
+                            <a href="#services" class="btn know_btn">know more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service_item">
+                            <img src="{% static 'images/manufacturers_representative.jpg' %}" alt="Our Services" />
+                            <h3>MANUFACTURER'S REPRESENTATIVE</h3>
+                            <p>Please write all that you import so i can upload them here. i can't think of what you manufactures rep now. That's why you see me asking for this now to help me complete what am doing without any issue please without any issue in this place that we are talking,</p>
+                            <a href="#services" class="btn know_btn">know more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service_item">
+                            <img src="{%static 'images/supplies3.jpg' %}" alt="Our Services" />
+                            <h3>SUPPLIES</h3>
+                            <p>Please write all that you import so i can upload them here. i can't think of what you supply now. That's why you see me asking for this now to help me complete what am doing without any issue please without any issue in this place that we are talking</p>
                             <a href="#services" class="btn know_btn">know more</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service_item">
                             <img src="{% static 'images/service_img2.jpg' %}" alt="Our Services" />
-                            <h3>RENOVATION</h3>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                            <h3>CIVIL WORK</h3>
+                            <p>Please write all that you import so i can upload them here. i can't think of what you civil work now. That's why you see me asking for this now to help me complete what am doing without any issue please without any issue in this place that we are talking</p>
                             <a href="#services" class="btn know_btn">know more</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service_item">
-                            <img src="{% static 'images/service_img3.jpg' %}" alt="Our Services" />
-                            <h3>ARCHITECTURE</h3>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                            <img src="{% static 'images/ren.jpg' %}" alt="Our Services" />
+                            <h3>BUILDING</h3>
+                            <p>Please write all that you import so i can upload them here. i can't think of what you cBUILDING now. That's why you see me asking for this now to help me complete what am doing without any issue please without any issue in this place that we are talking</p>
                             <a href="#services" class="btn know_btn">know more</a>
                         </div>
                     </div>
+                  
                 </div>
             </div>
         </section><!-- Services end -->
 
         <!-- Portfolio -->
-        <section id="portfolio">
-            <div class="container portfolio_area text-center">
-                <h2>Made with love</h2>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+        
+    <!-- Portfolio end -->
 
-                <div id="filters">
-                    <button class="button is-checked" data-filter="*">Show All</button>
-                    <button class="button" data-filter=".buildings">Buildings</button>
-                    <button class="button" data-filter=".interior">Interior Design</button>
-                    <button class="button" data-filter=".isolation">Isolation</button>
-                    <button class="button" data-filter=".plumbing">Plumbing</button>
+        <!-- Our Team -->
+        <section id="services">
+            <div class="container">
+                <h2 id="team">MEET OUR TEAM</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service_item">
+                            <img src="{%static 'images/md.jpg' %}" alt="Our Services" width="500px" height="500px"/>
+                            <h3>MANAGING DIRECTOR</h3>
+                            <p>Please write all that you import so i can upload them here. i can't think of what you import now. That's why you see me asking for this now to help me complete what am doing without any issue please without any issue in this place that we are talking.</p>
+                            <a href="#services" class="btn know_btn">know more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service_item">
+                            <img src="{% static 'images/sec.jpg' %}" alt="Our Services" width="500px" height="500px" />
+                            <h3>SECRETARY</h3>
+                            <p>Please write all that you import so i can upload them here. i can't think of what you export now. That's why you see me asking for this now to help me complete what am doing without any issue please without any issue in this place that we are talking</p>
+                            <a href="#services" class="btn know_btn">know more</a>
+                        </div>
+                    </div>
+                   
                 </div>
-                <!-- Portfolio grid -->		
-                <div class="grid">
-                    <div class="grid-sizer"></div>
-                    <div class="grid-item grid-item--width2 grid-item--height2 buildings plumbing interior">
-                        <img alt="" src="images/highligh_img.jpg" >
-                        <div class="portfolio_hover_area">
-                            <a class="fancybox" href="images/highligh_img.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><span class="fa fa-search"></span></a>
-                            <a href="#"><span class="fa fa-link"></span></a>
-                        </div>  
-                    </div>
-
-                    <div class="grid-item buildings interior isolation">
-                        <img alt="" src="images/portfolio1.jpg" >
-                        <div class="portfolio_hover_area">
-                            <a class="fancybox" href="images/portfolio1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><span class="fa fa-search"></span></a>
-                            <a href="#"><span class="fa fa-link"></span></a>
-                        </div>   
-                    </div>
-
-                    <div class="grid-item interior plumbing isolation">
-                        <img alt="" src="images/portfolio2.jpg" >
-                        <div class="portfolio_hover_area">
-                            <a class="fancybox" href="images/portfolio2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><span class="fa fa-search"></span></a>
-                            <a href="#"><span class="fa fa-link"></span></a>
-                        </div>  
-                    </div>
-
-                    <div class="grid-item isolation buildings">
-                        <img alt="" src="images/portfolio3.jpg" >
-                        <div class="portfolio_hover_area">
-                            <a class="fancybox" href="images/portfolio3.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><span class="fa fa-search"></span></a>
-                            <a href="#"><span class="fa fa-link"></span></a>
-                        </div>  
-                    </div>
-
-                    <div class="grid-item plumbing isolation">
-                        <img alt="" src="images/portfolio4.jpg" >
-                        <div class="portfolio_hover_area">
-                            <a class="fancybox" href="images/portfolio4.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><span class="fa fa-search"></span></a>
-                            <a href="#"><span class="fa fa-link"></span></a>
-                        </div>  
-                    </div>
-                </div><!-- Portfolio grid end -->
+                
             </div>
-        </section><!-- Portfolio end -->
+        </section><!-- Our Team end -->
+
+
 
         <!-- Testimonial -->
         <section id="testimonial">
             <div class="container text-center testimonial_area">
                 <h2>Customer Reviews</h2>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                <p>Big General Global Resources is trusted by many happy customers who we have worked for in different projects. Check what they're saying below.</p>
 
                 <div class="row">
                     <div class="col-md-4">
                         <div class="testimonial_item">
                             <div class="testimonial_content text-left">
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                                <p>Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review</p>
                             </div>
                             <img src="{% static 'images/testimonial_img1.png' %}" alt="Testimonial" />
-                            <p class="worker_name">john smith</p>
+                            <p class="worker_name">Peter Silverine</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="testimonial_item">
                             <div class="testimonial_content">
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                                <p>Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review</p>
                             </div>
                             <img src="{% static 'images/testimonial_img2.png' %}" alt="Testimonial" />
-                            <p class="worker_name">john smith</p>
+                            <p class="worker_name">Cosmos Elite</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="testimonial_item">
                             <div class="testimonial_content">
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                                <p>Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review Big general global resourec, tell me about customers review</p>
                             </div>
                             <img src="{% static 'images/testimonial_img1.png' %}" alt="Testimonial" />
-                            <p class="worker_name">john smith</p>
+                            <p class="worker_name">Orji Chineneye</p>
                         </div>
                     </div>
                 </div>
@@ -376,32 +390,37 @@
                         <h2>Do you have any questions?</h2>
                         <h2 class="second_heading">Feel free to contact us!</h2>
                     </div>
-                    <form role="form" class="form-inline text-right col-md-6" >
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="5" id="msg" placeholder="Message"></textarea>
-                        </div>
+                    <form role="form" class="form-inline text-right col-md-6" method="post">
+                        {% csrf_token %}
+                        {{ form.non_field_errors }}
+                        {% for field in form.visible_fields %}
+                       
+                            <div class="form-group">
+                                {{ field.errors }}         
+                                {{ field }}
+                                
+                            </div>
+                        {% endfor %}
                         <button type="submit" class="btn submit_btn">Submit</button>
-                    </form>				
+                    </form>			
                 </div>
             </div>
         </section><!-- Contact form end -->
+
+        
 
         <!-- Footer -->
         <footer>
             <!-- Footer top -->
             <div class="container footer_top">
                 <div class="row">
-                    <div class="col-lg-4 col-sm-7">
+                    <div class="col-lg-6 col-sm-7">
                         <div class="footer_item">
                             <h4>About Company</h4>
-                            <img class="logo" src="images/logo.png" alt="Construction" />
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem</p>
+                            <img class="logo" src="{% static 'images/logo.png' %}" alt="Construction" />
+                            <p>BIG GENERAL GLOBAL RESOURCES is an indegenous contracting company that was incorporated and registered 
+                                on the 7<sup>th</sup> of Novemebers, 2003 with option to general contracts, supplies, imports and exports
+                                , manufacturers representative, buiding construction and civil works and transportation.</p>
 
                             <ul class="list-inline footer_social_icon">
                                 <li><a href=""><span class="fa fa-facebook"></span></a></li>
@@ -412,39 +431,27 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-sm-5">
+                    <div class="col-lg-3 col-sm-5">
                         <div class="footer_item">
                             <h4>Explore link</h4>
                             <ul class="list-unstyled footer_menu">
-                                <li><a href=""><span class="fa fa-play"></span> Our services</a>
-                                <li><a href=""><span class="fa fa-play"></span> Meet our team</a>
+                                <li><a href="#services"><span class="fa fa-play"></span> Our services</a>
+                                <li><a href="#team"><span class="fa fa-play"></span> Meet our team</a>
                                 <li><a href=""><span class="fa fa-play"></span> Forum</a>
-                                <li><a href=""><span class="fa fa-play"></span> Help center</a>
-                                <li><a href=""><span class="fa fa-play"></span> Contact Cekas</a>
-                                <li><a href=""><span class="fa fa-play"></span> Privacy Policy</a>
-                                <li><a href=""><span class="fa fa-play"></span> Cekas terms</a>
-                                <li><a href=""><span class="fa fa-play"></span> Site map</a>
+                                <li><a href="#contact_form"><span class="fa fa-play"></span> Help center</a>
+                                <li><a href="#contact_form"><span class="fa fa-play"></span> Contact Us</a>
+                                
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-7">
-                        <div class="footer_item">
-                            <h4>Latest post</h4>
-                            <ul class="list-unstyled post">
-                                <li><a href=""><span class="date">20 <small>AUG</small></span>  Luptatum omittantur duo ne mpetus indoctum</a></li>
-                                <li><a href=""><span class="date">20 <small>AUG</small></span>  Luptatum omittantur duo ne mpetus indoctum</a></li>
-                                <li><a href=""><span class="date">20 <small>AUG</small></span>  Luptatum omittantur duo ne mpetus indoctum</a></li>
-                                <li><a href=""><span class="date">20 <small>AUG</small></span>  Luptatum omittantur duo ne mpetus indoctum</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                     <div class="col-lg-3 col-sm-5">
                         <div class="footer_item">
                             <h4>Contact us</h4>
                             <ul class="list-unstyled footer_contact">
-                                <li><a href=""><span class="fa fa-map-marker"></span> 124 New Line, London UK</a></li>
-                                <li><a href=""><span class="fa fa-envelope"></span> hello@psdfreebies.com</a></li>
-                                <li><a href=""><span class="fa fa-mobile"></span><p>+44 00 00 1234 <br />+44 00 00 1234</p></a></li>
+                                <li><span class="fa fa-map-marker"></span><p> 15 Igwurita Road, Rumukwurushi, Obio/Akpor L.G.A, Rivers State, Nigeria.</p></a></li>
+                                <li><a href="mailto:nnannabg@yahoo.com"><span class="fa fa-envelope"></span> nnannabg@yahoo.com</a></li>
+                                <li><span class="fa fa-mobile"></span><p>+234 8033 398 726 <br />+234 8091 112 230</p></a></li>
                             </ul>
                         </div>
                     </div>
@@ -457,15 +464,15 @@
                     Made with 
                     <i class="fa fa-heart"></i>
                     by 
-                    <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> 
-                    2016. All Rights Reserved
+                    <a target="_blank" href="http://sundaynwovuhonesty.herokuapp.com">Multiset Tech Ltd</a> 
+                    | All Rights Reserved - Big General Global Resources 2020
                 </p>
             </div><!-- Footer bottom end -->
         </footer><!-- Footer end -->
 
         <!-- JavaScript -->
-        <script src="js/jquery-1.12.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{% static 'js/jquery-1.12.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
         <!-- Bootsnav js -->
         <script src="{% static 'js/bootsnav.js' %}"></script>
@@ -473,10 +480,11 @@
         <!-- JS Implementing Plugins -->
         <script src="{% static 'js/isotope.js' %}"></script>
         <script src="{% static 'js/isotope-active.js' %}"></script>
-        <script src="{% static 'js/jquery.fancybox.js?v=2.1.5' %}"></script>
+        <script src="{% static 'js/jquery.fancybox.js' %}"></script>
 
         <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
 
         <script src="{% static 'js/main.js' %}"></script>
+
     </body>	
 </html>	
